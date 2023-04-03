@@ -1,4 +1,4 @@
-/*class Coconut{
+class Coconut{
     constructor(image) {
         this.image = image
 		this.x =  Math.random() * (width - this.width)
@@ -26,4 +26,4 @@
             return flase
         }
 	}
-}*/
+}
