@@ -4,10 +4,10 @@ class Game {
         this.player= new Player()
         this.backgroundImage= null
         this.playerImage= null
-       // this.coconutImages= []
+        this.coconutImages= []
         this.obstacle= []
         this.obstacleImage=null
-       // this.coconut= []
+        this.coconut= []
         
 
     }
@@ -16,7 +16,7 @@ class Game {
         this.background.preload()
         this.backgroundImage= loadImage("./assets/background.png");
         this.playerImage= loadImage("./assets/ninja monkey right.png");
-       // this.coconutImages.push(loadImage("./assets/coconut1 evil.png"));
+        this.coconutImages.push(loadImage("./assets/coconut1 evil.png"));
         this.obstacleImage= loadImage("./assets/banana.png");
     }
 
@@ -57,7 +57,7 @@ class Game {
             }
 		})
 
-       /* if (frameCount % 60 === 0) {
+        if (frameCount % 60 === 0) {
             this.coconut.push(new Coconut(random(this.coconutImages), width/2))
         }
 
@@ -70,7 +70,7 @@ class Game {
             } else {
                 return true;
             }
-        });*/
+        });
 
     }
 
