@@ -20,10 +20,10 @@ class Coconut{
 		let playerY = playerInfo.y + playerInfo.height / 2
 	
 		if (dist(coconutX, coconutY, playerX, playerY) < 25) {
-			return true
+			return true;
 		} 
         else{
-            return flase
+            return false;
         }
 	}
 }
