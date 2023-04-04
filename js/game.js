@@ -6,12 +6,15 @@ class Game {
       this.playerImage = null;
       this.obstacleImage = null;
       this.obstacles = [];
+      //this.coconutImage= null;
+      //this.coconuts= [];
     }
     preload() {
         this.background.preload();
-        this.backgroundImage = loadImage("./assets/background.png");
+        this.backgroundImage = loadImage("./assets/background.png", "../assets/background flipped.png");
         this.playerImage = loadImage("./assets/ninja monkey right.png");
         this.obstacleImage = loadImage("./assets/banana.png");
+       // this.coconutImage = loadImage("./assets/coconut1 evil.png")
       }
     setup() {
         createCanvas(600, 600);
@@ -34,13 +37,35 @@ class Game {
           } else {
             return true
           }
+        
+        })
+      }
+
+       /* if(frameCount% 90===0) {
+          this.coconuts.push(new Coconut(this.coconutImage))
+        }
+
+        this.coconuts.forEach(coconut => {
+          coconut.draw()
+        })
+        this.coconuts= this.coconuts.filter(coconut => {
+          if(coconut.collision(this.player) || coconut.x < -coconut.width){
+            return false
+          } else {
+            return true
+          }
+        
         })
         
-      }
+
+
+      }*/
 
      
     }
+  
+  
 
 
 
-    
+  
