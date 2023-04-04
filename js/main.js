@@ -1,20 +1,18 @@
-const game= new Game()
+const game = new Game();
 
 function preload() {
-    game.preload()
-};
+  game.preload();
+}
 
 function setup() {
-    createCanvas(600,600)
-    
-};
+  createCanvas(600, 600);
+}
 
 function draw() {
-    game.draw()
+  game.draw();
 }
-
 function keyPressed() {
-    if(keyCode=== 38) {
-        game.player.jump()
+    if (keyCode === 38) {
+      game.player.jump();
     }
-}
+  }

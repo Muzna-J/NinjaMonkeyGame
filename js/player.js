@@ -12,23 +12,25 @@ class Player {
 
     draw() {
         this.velocity += this.gravity
-		this.y += this.velocity
+    this.y += this.velocity
 
-        if (this.y >= height - this.height) {
-			this.y = height - this.height
-		}
-        else if(this.y<=0) {
-            this.y=0
-        }
-        image(game.playerImage, this.x, this.y, this.width, this.height);
+    if (this.y >= height - this.height) {
+        this.y = height - this.height
+    } else if (this.y <= 0) {
+        this.y = 0
+    }
+
+    image(game.playerImage, this.x, this.y, this.width, this.height)
         
     }
     
     jump() {
         if (this.y >= 0) {
-            this.velocity= -10;
+            this.velocity = -10;
         } else {
-            this.velocity= -100
+            this.y = 0;
         }
+    
     }
 }
+
