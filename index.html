@@ -3,31 +3,19 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="./start.css" />
         <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.js"></script>
-        <script src="./js/obstacle.js"></script>
-        <script src="./js/background.js"></script>
-        <script src="./js/player.js"></script>
-        <script src="./js/game.js"></script>
-        <script src="./js/main.js"></script>
-        <script src="./js/lockscroll.js"></script>
         <title>Ninja Monkey</title>
     </head>
-    <body scroll="no" style="overflow: hidden">
-        <h1>collect bananas and avoid coconuts!</h1>
-        <p id="score">Score: <span>0</span>
-        </p>
-        <div id="hearts">
+    <body>
+        <div class="container"> 
+            <img class="image" src="./assets/monkey-g34543dbb1_1280.png" alt="monkey image" />
+            <button class= "start-button" onclick="location.href='./game.html'">Start Game</button>
+            
+        
 
         </div>
-        <div class="container">
-
-        <div class="image-container">
-            <img src="./assets/heart.png" alt="heart" class="heart" />
-            <img src="./assets/heart.png" alt="heart" class="heart" />
-            <img src="./assets/heart.png" alt="heart" class="heart" />
-          </div>
-        </div>
+        
     </body>
-</html>
+    </html>

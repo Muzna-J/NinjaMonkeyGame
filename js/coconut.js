@@ -1,4 +1,4 @@
-/*class Coconut {
+class Coconut {
     constructor(image) {
         this.image = image
         this.x = width
@@ -19,20 +19,29 @@
         let playerX = playerInfo.x + playerInfo.width / 2
         let playerY = playerInfo.y + playerInfo.height / 2
     
-        if (dist(coconutX, coconutY, playerX, playerY) > 25) {
+        if (dist(coconutX, coconutY, playerX, playerY) > 50) {
             return false
         } else {
             
-            const hearts = document.querySelectorAll(".heart");
-            if (hearts.length > 0) {
-                hearts[hearts.length - 1].remove();
-                playerInfo.lives--;
+        
+            playerInfo.lives--;
+            game.playerLives--;
+            game.hearts.pop();
+            if(game.hearts.length===0) {
+                noLoop();
+                alert("Game Over!");
+                const highestScore= JSON.parse(localStorage.getItem('highestScore')) || 0;
+                document.querySelector("#score>span")
+                if(playerInfo.score>highestScore) {
+                    localStorage.setItem('highestScore', JSON.stringify(playerInfo.score));
+                }
             }
+
 
             return true;
         }
         
         }
-    }*/
+    }
 
 

@@ -21,7 +21,7 @@
 			let playerX = playerInfo.x + playerInfo.width / 2
 			let playerY = playerInfo.y + playerInfo.height / 2
 		
-			if (dist(obstacleX, obstacleY, playerX, playerY) > 25) {
+			if (dist(obstacleX, obstacleY, playerX, playerY) > 50) {
 				return false
 			} else {
 				

@@ -21,4 +21,36 @@ body {
     max-width: 4%;
     height: auto;
 }
+
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    padding: 20px;
+  }
+  
+  #game-over h1 {
+    font-size: 36px;
+    margin-top: 0;
+  }
+  
+  #game-over p {
+    font-size: 24px;
+  }
+  
+  #game-over button {
+    font-size: 24px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
   
