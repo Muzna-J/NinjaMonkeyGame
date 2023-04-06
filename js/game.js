@@ -14,14 +14,14 @@ class Game {
       this.heartImage= null;
       this.hearts= [];
       this.playerLives= 3;
-      this.maxScore = 100;
+      this.maxScore = 2000;
       backgroundMusic.play();
 
     }
     
     preload() {
         this.background.preload();
-        this.backgroundImage = loadImage("./assets/background.png", "../assets/background flipped.png");
+        this.backgroundImage = loadImage("./assets/background.png");
         this.playerImage = loadImage("./assets/ninja monkey right.png");
         this.obstacleImage = loadImage("./assets/banana.png");
         this.coconutImage = loadImage("./assets/coconut1 evil.png");

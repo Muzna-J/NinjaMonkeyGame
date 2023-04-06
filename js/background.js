@@ -8,12 +8,12 @@ class Background {
 
   preload() {
     this.img = loadImage("./assets/background.png");
-    this.img1 = loadImage("../assets/background flipped.png");
+    //this.img1 = loadImage("../assets/background flipped.png");
   }
 
   draw() {
     image(this.img, this.x, 0, width, height);
-    image(this.img1, this.x + width, 0, width, height);
+    image(this.img, this.x + width, 0, width, height);
   }
 
   update() {
