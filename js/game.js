@@ -11,6 +11,9 @@ class Game {
       this.heartImage= null;
       this.hearts= [];
       this.playerLives= 3;
+      
+      
+
     }
     preload() {
         this.background.preload();
@@ -19,13 +22,18 @@ class Game {
         this.obstacleImage = loadImage("./assets/banana.png");
         this.coconutImage = loadImage("./assets/coconut1 evil.png");
         this.heartImage= loadImage("./assets/heart.png");
+        
+        
         for(let i=0; i<this.playerLives; i++) {
           this.hearts.push(new Heart(this.heartImage, i * 50 + 10, 10));
         }
       }
     setup() {
         createCanvas(600, 600);
+      
+
       }
+    
     draw() {
         this.background.update();
         this.background.draw();
@@ -47,7 +55,7 @@ class Game {
           }
         
         })
-        if(frameCount% 90===0) {
+        if(frameCount % 90===0) {
           this.coconuts.push(new Coconut(this.coconutImage))
         }
 

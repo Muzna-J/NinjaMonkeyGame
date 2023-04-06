@@ -29,7 +29,7 @@ class Coconut {
             game.hearts.pop();
             if(game.hearts.length===0) {
                 noLoop();
-                alert("Game Over!");
+                window.location.replace("./over.html");
                 const highestScore= JSON.parse(localStorage.getItem('highestScore')) || 0;
                 document.querySelector("#score>span")
                 if(playerInfo.score>highestScore) {
