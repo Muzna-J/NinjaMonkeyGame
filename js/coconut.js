@@ -1,4 +1,4 @@
-const lifeLossSound= new Audio('./audio/error-2-126514.mp3');
+const lifeLossSound= new Audio('../audio/error-2-126514.mp3');
 
 class Coconut {
     constructor(image) {
