@@ -1,3 +1,5 @@
+const lifeLossSound= new Audio('../audio/error-2-126514.mp3');
+
 class Coconut {
     constructor(image) {
         this.image = image
@@ -6,6 +8,7 @@ class Coconut {
         this.width = 50
         this.height = 50
         this.velocity = 3
+        
     }
 
     draw() {
@@ -27,17 +30,23 @@ class Coconut {
             playerInfo.lives--;
             game.playerLives--;
             game.hearts.pop();
+            lifeLossSound.play();
+            
+
             if(game.hearts.length===0) {
+                // game over
                 noLoop();
                 window.location.replace("./over.html");
+                
+                
+                
+
                 const highestScore= JSON.parse(localStorage.getItem('highestScore')) || 0;
-                document.querySelector("#score>span")
+                
                 if(playerInfo.score>highestScore) {
                     localStorage.setItem('highestScore', JSON.stringify(playerInfo.score));
                 }
             }
-
-
             return true;
         }
         

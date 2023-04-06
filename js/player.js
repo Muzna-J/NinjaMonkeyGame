@@ -4,9 +4,11 @@ class Player {
         this.height= 140;
         this.x= 0;
         this.y= 600 - this.height;
-        this.gravity= 0.2;
+        this.gravity= 0.57;
         this.velocity= 0;
         this.score= 0;
+        
+        
 
     }
 
@@ -32,5 +34,8 @@ class Player {
         }
     
     }
-}
+
+   
+    };
+
 

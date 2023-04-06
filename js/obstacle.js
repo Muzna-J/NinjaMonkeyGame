@@ -26,8 +26,24 @@
 			} else {
 				
 				playerInfo.score += 100
-				document.querySelector("#score span").innerText = playerInfo.score
+				document.querySelector("#score span").innerText = playerInfo.score;
+				if(playerInfo.score===game.maxScore) {
+					// game over
+					const winningSound= new Audio('../audio/success-fanfare-trumpets-6185.mp3');
+					winningSound.play();
+					setTimeout(function(){
+						noLoop();
+						window.location.replace("./won.html");					
+						const highestScore= JSON.parse(localStorage.getItem('highestScore')) || 0;
+						
+						if(playerInfo.score>highestScore) {
+							localStorage.setItem('highestScore', JSON.stringify(playerInfo.score));
+						}
+					}, 800);
+				}
+				
 				return true
+
 			}
 		}
 	}
