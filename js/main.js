@@ -31,7 +31,7 @@ function keyPressed() {
     else if (keyCode === 32) { // space key
       if (isGameRunning) {
         backgroundMusic.pause();
-        //alert('Game paused');
+        
         noLoop();
         isGameRunning = false;
 

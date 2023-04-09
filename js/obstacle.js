@@ -4,7 +4,7 @@
 		constructor(image) {
 			this.image = image
 			this.x = width
-			this.y = random(600) //(Math.random() * height) / 2.5
+			this.y = random(600) 
 			this.width = 50
 			this.height = 50
 			this.velocity = 1
@@ -29,7 +29,7 @@
 				document.querySelector("#score span").innerText = playerInfo.score;
 				if(playerInfo.score===game.maxScore) {
 					// game over
-					const winningSound= new Audio('../audio/success-fanfare-trumpets-6185.mp3');
+					const winningSound= new Audio('./audio/success-fanfare-trumpets-6185.mp3');
 					winningSound.play();
 					setTimeout(function(){
 						noLoop();
