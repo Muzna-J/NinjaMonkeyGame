@@ -1,7 +1,7 @@
 # Ninja Monkey Game
 
 
-![ninjamonkey](images/ninjamonkey.gif)
+![ninjamonkey](images/NinjaMonkey.gif)
 
 
 This game was created solely for educational purposes and will not generate any revenue. 
