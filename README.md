@@ -1,4 +1,9 @@
 # Ninja Monkey Game
+
+
+![ninjamonkey](images/ninjamonkey.gif)
+
+
 This game was created solely for educational purposes and will not generate any revenue. 
 
 Please note that everything used in the game, including the sounds and images, do not belong to the creator. The attributions below acknowledge the sources for their works,
